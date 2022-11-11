@@ -1,0 +1,164 @@
+{
+  "apiErrors": [
+    {
+      "code": "stores1002",
+      "message": "Data not saved"
+    },
+    {
+      "code": "stores1003",
+      "message": "data not found"
+    },
+    {
+      "code": "stores1004",
+      "message": "Parent can not change status because of child dependency"
+    },
+    {
+      "code": "stores1005",
+      "message": "data not deleted"
+    },
+    {
+      "code": "a4000",
+      "message": "system exception has been thrown"
+    },
+    {
+      "code": "a40001",
+      "message": "User not exists"
+    },
+    {
+      "code": "a40002",
+      "message": "Role not exists"
+    },
+    {
+      "code": "a40003",
+      "message": "Id is required."
+    },
+    {
+      "code": "common04",
+      "message": "Data not found for: %s"
+    },
+    {
+      "code": "common05",
+      "message": "Id is required for: %s"
+    },
+    {
+      "code": "common06",
+      "message": "%s Data not saved"
+    },
+    {
+      "code": "a40005",
+      "message": "Role is required."
+    },
+    {
+      "code": "a40006",
+      "message": "User name is required."
+    },
+    {
+      "code": "a40007",
+      "message": "Password is required."
+    },
+    {
+      "code": "a40008",
+      "message": "login size should be in between 4 and 20."
+    },
+    {
+      "code": "a40009",
+      "message": "Password size should be in between 3 and 20."
+    },
+    {
+      "code": "a40010",
+      "message": "Invalid jwt token."
+    },
+    {
+      "code": "role01",
+      "message": "Role Name must not be empty"
+    },
+    {
+      "code": "role02",
+      "message": "Role Name already exists"
+    },
+    {
+      "code": "role03",
+      "message": "Role Not saved"
+    },
+    {
+      "code": "role04",
+      "message": "Role not updated"
+    },
+    {
+      "code": "role05",
+      "message": "Role deletion has failed"
+    },
+    {
+      "code": "role06",
+      "message": "Role duplication has failed"
+    },
+    {
+      "code": "u1001",
+      "message": "User has no role"
+    },
+    {
+      "code": "a40011",
+      "message": "Passwords must be at least 8 characters in length and a combination of numbers, letters, and special characters [Minimum 2 types are mandatory]"
+    },
+    {
+      "code": "a40012",
+      "message": "Invalid email pattern."
+    },
+    {
+      "code": "a40013",
+      "message": "Password mismatch with confirmation password."
+    },
+    {
+      "code": "common01",
+      "message": "Data not found."
+    },
+    {
+      "code": "common02",
+      "message": "Active flag is already set as given value"
+    },
+    {
+      "code": "a40019",
+      "message": "Token not found."
+    },
+    {
+      "code": "a50001",
+      "message": "Refresh token was expired. Please make a new signin request."
+    },
+    {
+      "code": "a50002",
+      "message": "Invalid user name or password."
+    },
+    {
+      "code": "a40020",
+      "message": "Refresh token is required."
+    },
+    {
+      "code": "cde1000",
+      "message": "In-Activation failed as it has active child(s)"
+    },
+    {
+      "code": "cde1001",
+      "message": "Activation failed as it has in-active parent(s) : %s"
+    },
+    {
+      "code": "cde1002",
+      "message": "In-Activation failed as it has active child(s) : %s"
+    },
+    {
+      "code": "edcm1002",
+      "message": "Provided Phone data is not digit number"
+    },
+    {
+      "code": "ag100",
+      "message": "agency name already exist"
+    },
+    {
+      "code": "ag1001",
+      "message": "agency code already exist"
+    },
+    {
+      "code": "fai100",
+      "message": "Fare info Unique code already exist"
+    }
+  ]
+}
