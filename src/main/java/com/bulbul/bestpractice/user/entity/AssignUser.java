@@ -1,8 +1,8 @@
 package com.bulbul.bestpractice.user.entity;
 
 import com.bulbul.bestpractice.common.generic.entity.AbstractDomainBasedEntity;
-import com.bulbul.bestpractice.flightmanagement.entity.Agency;
-import com.bulbul.bestpractice.flightmanagement.entity.FareInfo;
+import com.bulbul.bestpractice.fgtmanagement.entity.Agency;
+import com.bulbul.bestpractice.fgtmanagement.entity.FareInfo;
 import lombok.*;
 
 import javax.persistence.*;
