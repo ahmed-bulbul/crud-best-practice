@@ -35,6 +35,7 @@ public class User extends AbstractDomainBasedEntity {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     private Set<Role> roles = new HashSet<>();
+    private Long roleId;
 
 
     private boolean enabled;

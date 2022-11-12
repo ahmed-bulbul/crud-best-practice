@@ -7,8 +7,6 @@ import com.bulbul.bestpractice.user.repository.AssignUserRepository;
 import com.bulbul.bestpractice.common.generic.payload.response.PageData;
 import com.bulbul.bestpractice.common.generic.payload.seatch.IdQuerySearchDto;
 import com.bulbul.bestpractice.common.generic.service.AbstractSearchService;
-import com.bulbul.bestpractice.fgtmanagement.entity.Agency;
-import com.bulbul.bestpractice.fgtmanagement.entity.FareInfo;
 import com.bulbul.bestpractice.user.dto.request.AssignUserDto;
 import com.bulbul.bestpractice.user.dto.response.CustomUserResponse;
 import org.springframework.data.domain.Page;
@@ -74,22 +72,13 @@ public class AssignUserService extends AbstractSearchService<AssignUser, AssignU
         return AssignUserResponse.builder()
                 .id(assignUser.getId())
                 .userInfo(userResponse)
-                .agencyCode(assignUser.getAgency().getCode())
-                .agencyName(assignUser.getAgency().getName())
-                .agencyId(assignUser.getAgencyId())
-                .fareInfoCode(assignUser.getFareInfo().getUniqueCode())
-                .fareInfoId(assignUser.getFareInfoId())
                 .build();
     }
 
     @Override
     protected AssignUser convertToEntity(AssignUserDto assignUserDto) {
         User user = facadeService.assignUserWithRole(assignUserDto.getUserId(), assignUserDto.getRoleIds());
-        FareInfo fareInfo = facadeService.getFareInfoById(assignUserDto.getFareInfoId());
-        Agency agency = facadeService.getAgencyById(assignUserDto.getAgencyId());
         return AssignUser.builder()
-                .agency(agency)
-                .fareInfo(fareInfo)
                 .user(user)
                 .build();
     }
@@ -100,7 +89,4 @@ public class AssignUserService extends AbstractSearchService<AssignUser, AssignU
         return entity;
     }
 
-    public Boolean existByFareInfoId(Long fareInfoId, Boolean status) {
-        return assignUserRepository.existsByFareInfoIdAndIsActive(fareInfoId, status);
-    }
 }

@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AssignUserRepository extends AbstractRepository<AssignUser> {
-    Boolean existsByFareInfoIdAndIsActive(Long fareInfoId, Boolean status);
 }
