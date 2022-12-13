@@ -1,4 +1,4 @@
-package com.bulbul.bestpractice.area;
+package com.bulbul.bestpractice.area.payload;
 
 
 import com.bulbul.bestpractice.common.generic.payload.marker.IDto;

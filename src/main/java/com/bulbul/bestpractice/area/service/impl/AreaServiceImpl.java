@@ -1,6 +1,10 @@
-package com.bulbul.bestpractice.area;
+package com.bulbul.bestpractice.area.service.impl;
 
 
+import com.bulbul.bestpractice.area.entity.Area;
+import com.bulbul.bestpractice.area.payload.AreaDto;
+import com.bulbul.bestpractice.area.payload.AreaSearchDto;
+import com.bulbul.bestpractice.area.payload.AreaViewModel;
 import com.bulbul.bestpractice.common.generic.repository.AbstractRepository;
 import com.bulbul.bestpractice.common.generic.service.AbstractSearchService;
 import com.bulbul.bestpractice.common.generic.specification.CustomSpecification;

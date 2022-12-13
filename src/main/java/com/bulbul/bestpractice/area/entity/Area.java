@@ -1,4 +1,4 @@
-package com.bulbul.bestpractice.area;
+package com.bulbul.bestpractice.area.entity;
 
 
 import com.bulbul.bestpractice.common.generic.entity.AbstractDomainBasedEntity;
