@@ -66,6 +66,4 @@ public class AreaServiceImpl extends AbstractSearchService<Area, AreaDto, AreaSe
         return area;
     }
 
-
-
 }
