@@ -5,6 +5,7 @@ import com.bulbul.bestpractice.area.entity.Area;
 import com.bulbul.bestpractice.area.payload.AreaDto;
 import com.bulbul.bestpractice.area.payload.AreaSearchDto;
 import com.bulbul.bestpractice.area.payload.AreaViewModel;
+import com.bulbul.bestpractice.area.service.AreaService;
 import com.bulbul.bestpractice.common.generic.repository.AbstractRepository;
 import com.bulbul.bestpractice.common.generic.service.AbstractSearchService;
 import com.bulbul.bestpractice.common.generic.specification.CustomSpecification;
@@ -18,7 +19,7 @@ import org.springframework.stereotype.Service;
  * @author Ashraful
  */
 @Service
-public class AreaServiceImpl extends AbstractSearchService<Area, AreaDto, AreaSearchDto> {
+public class AreaServiceImpl extends AbstractSearchService<Area, AreaDto, AreaSearchDto> implements AreaService {
     private static final String STATUS_ID = "statusId";
     private static final String NAME = "name";
 
@@ -49,6 +50,7 @@ public class AreaServiceImpl extends AbstractSearchService<Area, AreaDto, AreaSe
                 .build();
     }
 
+    //if we want to extend create functionality we can override it easily
     @Override
     protected Area convertToEntity(AreaDto areaDto) {
         return Area.builder()
@@ -66,4 +68,9 @@ public class AreaServiceImpl extends AbstractSearchService<Area, AreaDto, AreaSe
         return area;
     }
 
+
+    @Override
+    public String testFunction() {
+       return "Test function return";
+    }
 }

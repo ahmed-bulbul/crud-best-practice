@@ -5,4 +5,6 @@ package com.bulbul.bestpractice.area.service;
  * @author Ashraful
  */
 public interface AreaService {
+
+    String testFunction();
 }
