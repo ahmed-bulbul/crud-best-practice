@@ -20,7 +20,6 @@ public class UserDetailsImpl implements UserDetails {
     private String username;
     private boolean enabled;
 
-
     @JsonIgnore
     private String password;
 
@@ -95,7 +94,12 @@ public class UserDetailsImpl implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return enabled;
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return id != null ? id.hashCode() : this.getClass().hashCode();
     }
 
     @Override
