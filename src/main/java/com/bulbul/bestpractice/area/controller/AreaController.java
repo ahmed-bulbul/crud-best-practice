@@ -32,7 +32,7 @@ public class AreaController extends AbstractSearchController<Area, AreaDto, Area
         this.areaService = areaService;
     }
 
-    @GetMapping
+    @GetMapping("/testFunc")
     public String testFunction(){
         return areaService.testFunction();
     }
