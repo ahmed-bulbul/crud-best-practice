@@ -6,10 +6,12 @@ import com.bulbul.bestpractice.area.payload.AreaDto;
 import com.bulbul.bestpractice.area.payload.AreaSearchDto;
 import com.bulbul.bestpractice.area.payload.AreaViewModel;
 import com.bulbul.bestpractice.area.service.AreaService;
+import com.bulbul.bestpractice.common.generic.payload.response.PageData;
 import com.bulbul.bestpractice.common.generic.repository.AbstractRepository;
 import com.bulbul.bestpractice.common.generic.service.AbstractSearchService;
 import com.bulbul.bestpractice.common.generic.specification.CustomSpecification;
 
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
@@ -68,6 +70,16 @@ public class AreaServiceImpl extends AbstractSearchService<Area, AreaDto, AreaSe
         return area;
     }
 
+
+    @Override
+    public PageData search(AreaSearchDto searchDto, Pageable pageable) {
+        return super.search(searchDto, pageable);
+    }
+
+    @Override
+    public PageData getAll(Boolean isActive, Pageable pageable) {
+        return super.getAll(isActive, pageable);
+    }
 
     @Override
     public String testFunction() {
